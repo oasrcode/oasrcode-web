@@ -25,7 +25,7 @@ const { title } = Astro.props;
 </html>
 <style is:global>
   :root {
-    color-scheme: light dark;
+    background-color: rgb(43, 43, 43);
   }
   html {
     font-family:
@@ -37,25 +37,11 @@ const { title } = Astro.props;
       Bitstream Vera Sans Mono,
       Courier New,
       monospace;
-    color: rgba(17, 17, 17, 0.9);
-    scroll-behavior: smooth;
   }
   body {
-    color: rgba(17, 17, 17, 0.9);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overscroll-behavior: none;
     align-items: center;
-  }
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
-  }
-  @media (prefers-color-scheme: dark) {
-    body {
-      color: rgba(255, 255, 255, 0.9);
-    }
   }
 </style>
