@@ -1,0 +1,25 @@
+{
+  "about": {},
+  "skills": [{}],
+  "experience": [
+    {
+      "company": "Técnicas Competitivas",
+      "position": "Desarrollador Fullstack",
+      "time": "Feb-2023 / Actualidad",
+      "summ": " Desarrollo de aplicaciones web utilizando tecnologías modernas como React y Node.js, contribuyendo a proyectos desde la fase de diseño hasta la implementación. Colaboración estrecha con equipos de diseño y QA para garantizar una experiencia de usuario fluida."
+    },
+    {
+      "company": "Formación CIP",
+      "position": "Gestor Moodle",
+      "time": "Mar-2020 / Jun-2020",
+      "summ": "Gestión y personalización de la plataforma Moodle para optimizar la experiencia de aprendizaje. Implementación de módulos adicionales y soporte técnico a usuarios finales, asegurando una funcionalidad adecuada de la plataforma educativa."
+    },
+    {
+      "company": "DYM Canarias",
+      "position": "Desarrollador de videojuegos - Unity",
+      "time": "Dic-2018 / Dic-2019",
+      "summ": "Desarrollo de videojuegos utilizando Unity, centrándose en la creación de mecánicas de juego y entornos interactivos. Participación en todo el ciclo de desarrollo, desde la conceptualización hasta el lanzamiento, trabajando en equipo para cumplir con los objetivos del proyecto."
+    }
+  ],
+  "projects": [{}]
+}
