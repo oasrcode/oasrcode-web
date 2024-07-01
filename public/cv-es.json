@@ -1,6 +1,19 @@
 {
   "about": {},
-  "skills": [{}],
+  "skills": [
+    {
+      "name": "Frontend",
+      "tools": ["React", "Next.js", "Angular", "Astro"]
+    },
+    {
+      "name": "Backend",
+      "tools": ["Node.js", ".Net", "Spring"]
+    },
+    {
+      "name": "Otros",
+      "tools": ["Docker", "Git","Azure DevOps", "Github","Postman"]
+    }
+  ],
   "experience": [
     {
       "company": "Técnicas Competitivas",
