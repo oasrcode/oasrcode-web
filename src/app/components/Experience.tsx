@@ -1,18 +1,20 @@
-import { Card } from "../interface/CardProps";
+"use client";
+
+import { Job, Project } from "../interface/IExperience";
 import ExperienceCard from "./ExperienceCard";
 import AngularIcon from "./icons/AngularIcon";
 import AzureDevOpsIcon from "./icons/AzureDevOpsIcon";
+import DockerIcon from "./icons/DockerIcon";
 import GitIcon from "./icons/GitIcon";
+import GrafanaIcon from "./icons/GrafanaIcon";
+import MongoIcon from "./icons/MongoIcon";
 import NetIcon from "./icons/NetIcon";
+import NodeIcon from "./icons/NodeIcon";
+import PostgresIcon from "./icons/PostgresIcon";
+import StudentIcon from "./icons/StudentIcon";
+import WorkIcon from "./icons/WorkIcon";
 import { MotionSection } from "./motion/Motions";
 
-const CARDS: Card[] = [
-  {
-    name: "GiseCloud",
-    summ: "Desarrollo de plataforma de seguridad para policía local y equipos de emergencias en canarias.",
-    icons: [AngularIcon({ width: 20, height: 20 }), NetIcon({ width: 20, height: 20 }), AzureDevOpsIcon({ width: 20, height: 20 }), GitIcon({ width: 20, height: 20 })],
-  },
-];
 export default function Experience() {
   const openTag = "<";
   const closeTag = "/>";
@@ -22,14 +24,14 @@ export default function Experience() {
       initial={{ x: 300, opacity: 0 }}
       whileInView={{
         opacity: 1,
-        x: 0, // Slide in to its original position
+        x: 0,
         transition: {
-          duration: 1, // Animation duration
+          duration: 1,
         },
       }}
       exit={{ x: 300, opacity: 0 }}
       id="experience"
-      className="relative flex flex-col w-full h-[100dvh] pt-0 lg:pt-40  lg:items-center justify-start lg:justify-start text-black "
+      className="relative flex flex-col w-full min-h-[100dvh] pt-0 lg:pt-40 mb-20  lg:items-center justify-start lg:justify-start text-black "
     >
       <p className="relative lg:absolute lg:left-0 text-4xl font-bold ">
         <span className="text-4">{openTag}</span>
@@ -37,36 +39,115 @@ export default function Experience() {
         <span className="text-4xl">{closeTag}</span>
       </p>
 
-      <div className="relative border-l-2 border-black  mt-20 lg:mt-20 ">
-        <div className="ml-10 flex flex-row gap-5">
-          <div className="bg-white w-5 h-5 rounded-full absolute -left-2.5"></div>
-          <div>
-            <p className="text-xs lg:text-sm opacity-70">03/2023 - Actualidad</p>
-            <p className="lg:text-2xl font-bold mt-4">Fullstack Developer</p>
-            <p className="text-sm lg:text-lg">Tecnicas Competitivas S.L</p>
-            <p className="opacity-70 text-xs">Proyectos</p>
-            {CARDS.map((card, index) => (
-              <ExperienceCard data={card} key={index} />
-            ))}
+      <div className="relative flex flex-col gap-10 border-l-2 border-black  mt-20 lg:mt-20 ">
+        {EXPERIENCE.map((job, index) => (
+          <div key={index} className="ml-10 flex flex-row gap-5 max-w-[600px]">
+            <div className="flex items-center justify-center border-[1px] border-black bg-white rounded-full w-12 h-12 absolute -left-6">{job.icon}</div>
+            <div>
+              <p className="text-xs lg:text-sm opacity-70">{job.date}</p>
+              <p className="lg:text-2xl font-bold mt-4">{job.charge}</p>
+              <p className="text-sm lg:text-lg">{job.company}</p>
+              <p className="opacity-90 text-sm">{job.summ}</p>
+              {job.hasProjects == true ? (
+                <>
+                  {" "}
+                  <p className="opacity-70 text-xs mt-5">Proyectos</p>
+                  {PROJECTS.map((card, index) => (
+                    <ExperienceCard data={card} key={index} />
+                  ))}
+                </>
+              ) : (
+                <></>
+              )}
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </MotionSection>
   );
 }
-{
-  /* <MotionDivExperienceCardHover
-whileHover={{ scale: 1.2 }}
-whileTap={{ scale: 0.9 }}
-transition={{ type: "spring", stiffness: 400, damping: 17, duration: 1 }}
-className="flex flex-col p-1 pl-2 gap-3 bg-white border-[1px] rounded-lg border-black mt-3 max-w-[600px] shadow-gray-700 shadow-lg"
->
-<p className="font-semibold">GiseCloud</p>
 
-<p className=" text-sm text-wrap"> Desarrollo de plataforma de seguridad para policía local y equipos de emergencias en canarias.</p>
-<div className="flex flex-row flex-wrap gap-2">
-  <AngularIcon width={25} height={25} />
-  <NetIcon width={25} height={25} />
-</div>
-</MotionDivExperienceCardHover> */
-}
+const PROJECTS: Project[] = [
+  {
+    name: "GiseCloud",
+    summ: "Desarrollo  de plataforma web de seguridad para policía local y equipos de emergencias en canarias.",
+    icons: [
+      AngularIcon({ width: 20, height: 20 }),
+      NetIcon({ width: 20, height: 20 }),
+      PostgresIcon({ width: 20, height: 20 }),
+      AzureDevOpsIcon({ width: 20, height: 20 }),
+      GitIcon({ width: 20, height: 20 }),
+    ],
+  },
+  {
+    name: "Plataforma iot",
+    summ: "Desarrollo de plataforma web que muestra datos de sensores y gráficas de sus series temporales. Además, muestra imágenes de cámaras de seguridad con bounding boxes.",
+    icons: [
+      AngularIcon({ width: 20, height: 20 }),
+      NodeIcon({ width: 20, height: 20 }),
+      MongoIcon({ width: 20, height: 20 }),
+      PostgresIcon({ width: 20, height: 20 }),
+      DockerIcon({ width: 20, height: 20 }),
+      GrafanaIcon({ width: 20, height: 20 }),
+      AzureDevOpsIcon({ width: 20, height: 20 }),
+      GitIcon({ width: 20, height: 20 }),
+    ],
+  },
+  {
+    name: "Drago Administrativo",
+    summ: "Mantenimiento y desarrollos de Drago Adm, programa de escritorio para la gestión de centros de salud en canarias.",
+    icons: [NetIcon({ width: 20, height: 20 }), AzureDevOpsIcon({ width: 20, height: 20 }), GitIcon({ width: 20, height: 20 })],
+  },
+];
+
+const EXPERIENCE: Job[] = [
+  {
+    icon: WorkIcon({ width: 35, height: 35 }),
+    date: "03/2023 - Actualidad",
+    charge: "Fullstack Developer",
+    company: "Técnicas Competitivas S.L",
+    summ: "A continuación algunos de los proyectos en los que he participado dentro de la organización.",
+    hasProjects: true,
+    Projects: PROJECTS,
+  },
+  {
+    icon: StudentIcon({ width: 35, height: 35 }),
+    date: "sept/2020 - mar/2023",
+    charge: "Desarrollo de aplicaciones multimedia.",
+    company: "Ciclo Superior",
+    summ: "A distancia - IES El Rincón",
+    hasProjects: false,
+  },
+  {
+    icon: StudentIcon({ width: 35, height: 35 }),
+    date: "may/2020",
+    charge: "Inglés B2.1",
+    company: "Certificación Escula Oficial de idiomas.",
+    summ: "",
+    hasProjects: false,
+  },
+  {
+    icon: WorkIcon({ width: 35, height: 35 }),
+    date: "ene/2020 - may/2020",
+    charge: "Gestor Moodle",
+    company: "Atlas System S.L",
+    summ: "Gestor de cursos en plataforma Moodle. Desde alta de alumnado y cursos, resolución de incidencias y seguimiento de los mismos.",
+    hasProjects: false,
+  },
+  {
+    icon: WorkIcon({ width: 35, height: 35 }),
+    date: "sept/2020 - marz/2023",
+    charge: "Desarrollador de videojuegos educativos",
+    company: "Ciclo Superior",
+    summ: "Desarrollo de videojuegos educativos para cursos de Servicio Canarios Público de Empleo, gamificando curso de inglés.",
+    hasProjects: false,
+  },
+  {
+    icon: StudentIcon({ width: 35, height: 35 }),
+    date: "feb/2018 - ago/2018",
+    charge: "Desarrollo de videojuegos",
+    company: "Certificación - 600h",
+    summ: "Desarrollo de videojuegos 2D y 3D con Unity.",
+    hasProjects: false,
+  },
+];
