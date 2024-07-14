@@ -9,11 +9,11 @@ export default function AzureDevOpsIcon({ width, height }: IconProps) {
       />
       <defs>
         <linearGradient id="azure-devops-color-16__paint0_linear_707_116" x1="8" x2="8" y1="14.956" y2="1.026" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#0078D4" />
-          <stop offset=".16" stop-color="#1380DA" />
-          <stop offset=".53" stop-color="#3C91E5" />
-          <stop offset=".82" stop-color="#559CEC" />
-          <stop offset="1" stop-color="#5EA0EF" />
+          <stop stopColor="#0078D4" />
+          <stop offset=".16" stopColor="#1380DA" />
+          <stop offset=".53" stopColor="#3C91E5" />
+          <stop offset=".82" stopColor="#559CEC" />
+          <stop offset="1" stopColor="#5EA0EF" />
         </linearGradient>
       </defs>
     </svg>
