@@ -122,7 +122,7 @@ const EXPERIENCE: Job[] = [
     icon: StudentIcon({ width: 35, height: 35 }),
     date: "may/2020",
     charge: "Inglés B2.1",
-    company: "Certificación Escula Oficial de idiomas.",
+    company: "Certificación Escula Oficial de Idiomas.",
     summ: "",
     hasProjects: false,
   },
