@@ -106,7 +106,7 @@ const EXPERIENCE: Job[] = [
     date: "03/2023 - Actualidad",
     charge: "Fullstack Developer",
     company: "Técnicas Competitivas S.L",
-    summ: "A continuación algunos de los proyectos en los que he participado dentro de la organización.",
+    summ: "Algunos de los proyectos en los que trabajo.",
     hasProjects: true,
     Projects: PROJECTS,
   },
