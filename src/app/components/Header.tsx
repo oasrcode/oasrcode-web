@@ -10,8 +10,9 @@ export default function Header() {
   const tabs = [
     { label: "Inicio", href: "#home" },
     { label: "Experiencia", href: "#experience" },
-    { label: "Proyectos", href: "#proyects" },
-    { label: "Blog", href: "/blog" }, // Ajuste aquí para ser consistente con otros hrefs
+    { label: "Habilidades", href: "#skills" },
+    { label: "Proyectos", href: "#projects" },
+    { label: "Blog", href: "/blog" },
   ];
 
   const [hovered, setHovered] = useState("Inicio");

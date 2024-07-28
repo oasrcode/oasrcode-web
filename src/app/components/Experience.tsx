@@ -33,11 +33,7 @@ export default function Experience() {
       id="experience"
       className="relative flex flex-col w-full min-h-[100dvh] pt-0 lg:pt-40 mb-20  lg:items-center justify-start lg:justify-start text-black "
     >
-      <p className="relative lg:absolute lg:left-0 text-2xl lg:text-4xl font-bold ">
-        <span className="text-2xl lg:text-4xl">{openTag}</span>
-        Experiencia
-        <span className=" text-2xl lg:text-4xl">{closeTag}</span>
-      </p>
+   
 
       <div className="relative flex flex-col gap-10 ml-2 lg:ml-0  border-l-2 border-black  mt-10 lg:mt-20 ">
         {EXPERIENCE.map((job, index) => (
