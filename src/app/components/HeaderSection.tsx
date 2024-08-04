@@ -5,15 +5,14 @@ const CLOSETAG = "/>";
 export default function HeaderSection({ children, id, title }: { children: React.ReactNode; id: string; title: string }) {
   return (
     <MotionSection
-      initial={{ x: 300, opacity: 0 }}
+      initial={{ opacity: 0 }}
       whileInView={{
         opacity: 1,
-        x: 0,
         transition: {
-          duration: 1,
+          duration: 1.5,
         },
       }}
-      exit={{ x: 300, opacity: 0 }}
+      exit={{  opacity: 0 }}
       id={id}
       className="relative flex flex-col w-full min-h-[100dvh] pt-0 lg:pt-40 mb-20  lg:items-center justify-start lg:justify-start text-black "
     >
