@@ -13,11 +13,8 @@ export default function Home() {
       <Experience/>
       </HeaderSection>
 
-      <HeaderSection  id="skills" title="Habilidades"> 
+      <HeaderSection id="experience" title="Experiencia">
       <Skills/>
-      </HeaderSection>
-      <HeaderSection  id="projects" title="Proyectos">
-      <Projects/>
       </HeaderSection>
    
     </div>
