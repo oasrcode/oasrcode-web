@@ -47,7 +47,7 @@ export default function Hero() {
         </a>
       </li>
     </div>
-    <div className="absolute bottom-0 lg:bottom-40 animate-bounce">
+    <div className="absolute bottom-24 animate-bounce">
       <ArrowDown width={50} height={50} />
     </div>
   </MotionSection>
