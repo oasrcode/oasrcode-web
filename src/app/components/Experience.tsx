@@ -1,5 +1,3 @@
-"use client";
-
 import { Job, Project } from "../interface/IExperience";
 import ExperienceCard from "./ExperienceCard";
 import AngularIcon from "./icons/AngularIcon";
@@ -13,28 +11,10 @@ import NodeIcon from "./icons/NodeIcon";
 import PostgresIcon from "./icons/PostgresIcon";
 import StudentIcon from "./icons/StudentIcon";
 import WorkIcon from "./icons/WorkIcon";
-import { MotionSection } from "./motion/Motions";
 
 export default function Experience() {
-  const openTag = "<";
-  const closeTag = "/>";
-
   return (
-    <MotionSection
-      initial={{ x: 300, opacity: 0 }}
-      whileInView={{
-        opacity: 1,
-        x: 0,
-        transition: {
-          duration: 1,
-        },
-      }}
-      exit={{ x: 300, opacity: 0 }}
-      id="experience"
-      className="relative flex flex-col w-full min-h-[100dvh] pt-0 lg:pt-40 mb-20  lg:items-center justify-start lg:justify-start text-black "
-    >
-   
-
+    <div className="relative flex flex-col w-full min-h-[100dvh] pt-0 lg:pt-40 mb-20  lg:items-center justify-start lg:justify-start">
       <div className="relative flex flex-col gap-10 ml-2 lg:ml-0  border-l-2 border-black  mt-10 lg:mt-20 ">
         {EXPERIENCE.map((job, index) => (
           <div key={index} className="ml-10 flex flex-row gap-5 max-w-[600px]">
@@ -59,7 +39,7 @@ export default function Experience() {
           </div>
         ))}
       </div>
-    </MotionSection>
+    </div>
   );
 }
 
