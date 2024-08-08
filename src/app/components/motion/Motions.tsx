@@ -5,3 +5,4 @@ export const MotionSpanHeaderHover= motion.span;
 export const MotionDivExperienceCardHover= motion.div;
 export const MotionSection= motion.section;
 export const MotionDivSnake= motion.div;
+export const MotionCarousel= motion.div;

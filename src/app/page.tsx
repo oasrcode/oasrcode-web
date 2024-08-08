@@ -13,7 +13,7 @@ export default function Home() {
       <Experience/>
       </HeaderSection>
 
-      <HeaderSection id="experience" title="Experiencia">
+      <HeaderSection id="skills" title="Habilidades">
       <Skills/>
       </HeaderSection>
    
