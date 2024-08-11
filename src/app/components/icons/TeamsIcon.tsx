@@ -43,9 +43,9 @@ export default function TeamsIcon({ width, height }: IconProps) {
       />
       <path opacity=".2" d="M1140.333,561.355v103.148c-104.963-24.857-191.679-98.469-233.25-198.003	h138.395C1097.783,466.699,1140.134,509.051,1140.333,561.355z" />
       <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="198.099" y1="1683.0726" x2="942.2344" y2="394.2607" gradientTransform="matrix(1 0 0 -1 0 2075.3333)">
-        <stop offset="0" stop-color="#5a62c3" />
-        <stop offset=".5" stop-color="#4d55bd" />
-        <stop offset="1" stop-color="#3940ab" />
+        <stop offset="0" stopColor="#5a62c3" />
+        <stop offset=".5" stopColor="#4d55bd" />
+        <stop offset="1" stopColor="#3940ab" />
       </linearGradient>
       <path
         fill="url(#a)"

@@ -18,12 +18,12 @@ export default function JiraIcon({ width, height }: IconProps) {
     </g>
     <defs>
     <linearGradient id="paint0_linear" x1="19.3455" y1="9.01882" x2="14.2302" y2="14.45" gradientUnits="userSpaceOnUse">
-    <stop offset="0.176" stop-color="#0052CC"/>
-    <stop offset="1" stop-color="#2684FF"/>
+    <stop offset="0.176" stopColor="#0052CC"/>
+    <stop offset="1" stopColor="#2684FF"/>
     </linearGradient>
     <linearGradient id="paint1_linear" x1="13.5601" y1="15.0525" x2="7.63562" y2="20.9874" gradientUnits="userSpaceOnUse">
-    <stop offset="0.176" stop-color="#0052CC"/>
-    <stop offset="1" stop-color="#2684FF"/>
+    <stop offset="0.176" stopColor="#0052CC"/>
+    <stop offset="1" stopColor="#2684FF"/>
     </linearGradient>
     </defs>
     </svg>
