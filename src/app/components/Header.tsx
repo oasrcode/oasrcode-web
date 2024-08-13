@@ -10,7 +10,6 @@ export default function Header() {
   const tabs = [
     { label: "Inicio", href: "#home" },
     { label: "Experiencia", href: "#experience" },
-    { label: "Habilidades", href: "#skills" },
     { label: "Proyectos", href: "#projects" },
     { label: "Blog", href: "/blog" },
   ];
