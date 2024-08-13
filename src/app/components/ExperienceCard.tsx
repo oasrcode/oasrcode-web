@@ -1,4 +1,4 @@
-import { PropProject } from "../interface/IExperience";
+import { PropProject } from "../interface/IProject";
 
 
 export default function ExperienceCard({ data }: PropProject) {

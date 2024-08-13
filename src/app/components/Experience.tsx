@@ -1,4 +1,4 @@
-import { Job, Project } from "../interface/IExperience";
+import { Job, Project } from "../interface/IProject";
 import ExperienceCard from "./ExperienceCard";
 import AngularIcon from "./icons/AngularIcon";
 import AzureDevOpsIcon from "./icons/AzureDevOpsIcon";
