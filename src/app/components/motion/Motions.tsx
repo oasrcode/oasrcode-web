@@ -6,3 +6,5 @@ export const MotionDivExperienceCardHover= motion.div;
 export const MotionSection= motion.section;
 export const MotionDivSnake= motion.div;
 export const MotionCarousel= motion.div;
+export const MotionSkills= motion.div;
+export const MotionSkillIcon= motion.div;
