@@ -8,3 +8,4 @@ export const MotionDivSnake= motion.div;
 export const MotionCarousel= motion.div;
 export const MotionSkills= motion.div;
 export const MotionSkillIcon= motion.div;
+export const MotionSideNav= motion.div;

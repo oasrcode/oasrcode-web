@@ -1,6 +1,8 @@
 "use client";
 
-import { MotionButtonHeader, MotionSpanHeaderHover } from "./motion/Motions";
+import CloseMenuIcon from "./icons/CloseMenuIcon";
+import OpenMenuIcon from "./icons/OpenMenuIcon";
+import { MotionButtonHeader, MotionSideNav, MotionSpanHeaderHover } from "./motion/Motions";
 import { useState } from "react";
 
 export default function Header() {
@@ -15,12 +17,13 @@ export default function Header() {
   ];
 
   const [hovered, setHovered] = useState("Inicio");
+  const [show, setShow] = useState(false);
 
   return (
     <header className="sticky z-50 flex items-center top-0 w-full h-24 bg-slate-950">
       <div className="flex flex-row items-center justify-between mx-auto w-full lg:w-3/5 backdrop:blur-lg text-white">
-       <a href="/" className="text-white text-xl lg:text-3xl ml-10 lg:ml-0 ">
-       <span className="text-yellow-500">{openTag}</span>OASRCode<span className="text-yellow-500">{closeTag}</span>
+        <a href="/" className="text-white text-xl lg:text-3xl ml-10 lg:ml-0 ">
+          <span className="text-yellow-500">{openTag}</span>OASRCode<span className="text-yellow-500">{closeTag}</span>
         </a>
         <ul className="hidden lg:flex flex-row items-center gap-20 mr-10">
           {tabs.map((tab, index) => (
@@ -31,8 +34,38 @@ export default function Header() {
             </MotionButtonHeader>
           ))}
         </ul>
-        <a className="block lg:hidden bg-yellow-500 text-black mr-10 rounded-lg hover:bg-yellow-700 hover:text-yellow-100 duration-200 px-4 py-1 lg:px-6 lg:py-3"> Blog</a>
+        <button
+          className="block lg:hidden mr-10"
+          onClick={() => {
+            setShow(!show);
+          }}
+        >
+          {show==false?<OpenMenuIcon width={30} height={30} />:<CloseMenuIcon width={40} height={40} />}
+          
+        </button>
       </div>
+      <MotionSideNav
+        initial={{ x: "-100%" }}
+        animate={show ? { x: 0 } : { x: "-100%" }}
+        transition={{ type: "tween", duration: 0.3 }}
+        style={{ display: show ? "block" : "block" }}
+        className="absolute top-24 w-full h-[100dvh] bg-slate-950 flex flex-col lg:hidden"
+      >
+        <ul className="flex flex-col items-center justify-start gap-20 mt-20 mx-20">
+          {tabs.map((tab, index) => (
+            <a
+              href={tab.href}
+              onClick={() => {
+                setShow(!show);
+              }}
+              key={index}
+              className="w-full py-3 rounded-md text-center bg-yellow-500"
+            >
+              {tab.label}
+            </a>
+          ))}
+        </ul>
+      </MotionSideNav>
     </header>
   );
 }
