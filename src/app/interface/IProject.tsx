@@ -5,7 +5,7 @@ export interface Project {
   name: string;
   summ: string;
   icons: any[];
-  images?: string[];
+  image?: string;
   url?: string;
 }
 export interface Job {
