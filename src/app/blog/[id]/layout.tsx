@@ -1,4 +1,4 @@
-import HistoricBlog from "../components/HistoricBlog";
+import HistoricBlog from "../../components/HistoricBlog";
 
 export default function BlogLayaout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
