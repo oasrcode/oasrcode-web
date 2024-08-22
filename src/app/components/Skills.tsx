@@ -25,7 +25,6 @@ import TailwindIcon from "./icons/TailwindIcon";
 import TeamsIcon from "./icons/TeamsIcon";
 
 import TypeScriptIcon from "./icons/TypeScriptIcon";
-import { MotionSkillIcon, MotionSkills } from "./motion/Motions";
 
 const frontendIcons = [
   AngularIcon({ height: 80, width: 80 }),
