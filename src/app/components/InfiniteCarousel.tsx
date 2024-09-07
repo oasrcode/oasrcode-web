@@ -1,4 +1,3 @@
-import { animate } from "framer-motion";
 import { MotionCarousel } from "./motion/Motions";
 
 export default function InfiniteCarousel({ icons, direction }: { icons: any[]; direction: any }) {
