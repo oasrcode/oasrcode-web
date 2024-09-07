@@ -1,3 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images:{
+        remotePatterns:["https://aythamisantana.pages.dev"]
+    }
+};
 export default nextConfig;
