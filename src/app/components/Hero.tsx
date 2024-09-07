@@ -89,7 +89,7 @@ export default function Hero() {
         <img src="/foto_perfil.png" className="rounded-full w-32 lg:w-52 shadow-lg shadow-gray-900" alt="Foto de perfil de Aythami Santana, desarrollador de software" />
         <p className="text-4xl lg:text-5xl font-bold font-sans animated-gradient drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">Aythami Santana</p>
         <p className="text-xl lg:text-3xl font-mono  text-yellow-500 font-bold">Fullstack developer</p>
-        <p className="w-11/12 lg:w-2/5 font-mono text-slate-50 drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)] opacity-80">
+        <p className="w-11/12 lg:w-2/5 font-mono text-slate-50 drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)] opacity-80 tracking-wide">
           Soluciono problemas, ayudo al equipo a alcanzar objetivos, fomento un buen clima de trabajo y me mantengo en constante aprendizaje para adaptarme a las nuevas tendencias.
         </p>
         <li className="list-none flex flex-row items-center gap-10 lg:mt-10">

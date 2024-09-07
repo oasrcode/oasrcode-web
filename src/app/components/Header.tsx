@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header className="sticky z-50 flex items-center top-0 w-full h-24 bg-slate-950">
       <div className="flex flex-row items-center justify-between mx-auto w-full lg:w-3/5 backdrop:blur-lg text-white">
-        <Link href="/" className="text-white text-xl lg:text-3xl ml-10 lg:ml-0 " aria-label="enlace a la página principal">
+        <Link href="/" className="text-neutral-300 font-bold font-mono text-xl lg:text-3xl ml-10 lg:ml-0 drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)] " aria-label="enlace a la página principal">
           <span className="text-yellow-500">{openTag}</span>Aythami Santana<span className="text-yellow-500">{closeTag}</span>
         </Link>
 
@@ -37,7 +37,7 @@ export default function Header() {
                   href={tab.href}
                   onHoverStart={() => setHovered(tab.label)}
                   key={index}
-                  className="group relative cursor-pointer hover:text-yellow-500 duration-200 px-4 py-3"
+                  className="group relative cursor-pointer text-neutral-300 hover:text-yellow-500 duration-200 px-4 py-3"
                 >
                   {tab.label}
                   {hovered === tab.label && <MotionSpanHeaderHover layoutId="nav-item" className="absolute bg-yellow-500 bg-opacity-30 inset-0 rounded-md p-2"></MotionSpanHeaderHover>}

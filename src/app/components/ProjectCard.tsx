@@ -27,7 +27,7 @@ export default function ProjectCard({ data }: { data: Project }) {
             <img className="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105" src={data.image} alt={data.name} />
           </div>
         ) : null}
-        <p className="text-neutral-50 text-sm leading-relaxed">{data.summ}</p>
+        <p className="text-neutral-300 text-sm leading-relaxed tracking-wide">{data.summ}</p>
       </div>
 
       <div className="absolute bottom-3 w-full flex flex-col gap-4 items-center">
