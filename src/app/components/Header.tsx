@@ -14,7 +14,6 @@ export default function Header() {
     { label: "Inicio", href: "#home" },
     { label: "Experiencia", href: "#experience" },
     { label: "Proyectos", href: "#projects" },
-    { label: "Blog", href: "/blog" },
   ];
 
   const [hovered, setHovered] = useState("Inicio");

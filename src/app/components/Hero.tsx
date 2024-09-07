@@ -99,7 +99,7 @@ export default function Hero() {
           <a className="hover:scale-125 ease-in-out duration-200" href="https://github.com/oasrcode/" target="_blank">
             <GithubIcon width={40} height={40} />
           </a>
-          <a className="px-3 py-2 bg-black rounded-lg ease-in-out duration-200 hover:bg-slate-800 hover:scale-125 hover:ring-2 hover:ring-yellow-200" href="mailto:oasrjob@gmail.com">
+          <a className="px-3 py-2 bg-black rounded-lg ease-in-out duration-200 hover:scale-125" href="mailto:oasrjob@gmail.com">
             Contáctame 🤙
           </a>
         </li>
