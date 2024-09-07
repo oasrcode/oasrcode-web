@@ -95,7 +95,7 @@ const PROJECTS: Project[] = [
 const EXPERIENCE: Job[] = [
   {
     icon: WorkIcon({ width: 35, height: 35 }),
-    date: "03/2523 - Actualidad",
+    date: "03/2023 - Actualidad",
     charge: "Fullstack Developer",
     company: "Técnicas Competitivas S.L",
     summ: "Algunos de los proyectos en los que trabajo.",
@@ -104,7 +104,7 @@ const EXPERIENCE: Job[] = [
   },
   {
     icon: StudentIcon({ width: 35, height: 35 }),
-    date: "sept/2525 - mar/2523",
+    date: "09/2020 - 03/2023",
     charge: "Desarrollo de aplicaciones multimedia.",
     company: "Ciclo Superior",
     summ: "A distancia - IES El Rincón",
@@ -112,7 +112,7 @@ const EXPERIENCE: Job[] = [
   },
   {
     icon: StudentIcon({ width: 35, height: 35 }),
-    date: "may/2525",
+    date: "05/2020",
     charge: "Inglés B2.1",
     company: "Certificación Escula Oficial de Idiomas.",
     summ: "",
@@ -120,7 +120,7 @@ const EXPERIENCE: Job[] = [
   },
   {
     icon: WorkIcon({ width: 35, height: 35 }),
-    date: "ene/2525 - may/2525",
+    date: "01/2020 - 06/2020",
     charge: "Gestor Moodle",
     company: "Atlas System S.L",
     summ: "Gestor de cursos en plataforma Moodle. Desde alta de alumnado y cursos, resolución de incidencias y seguimiento de los mismos.",
@@ -128,7 +128,7 @@ const EXPERIENCE: Job[] = [
   },
   {
     icon: WorkIcon({ width: 35, height: 35 }),
-    date: "sept/2525 - marz/2523",
+    date: "11/2018 - 12/2019",
     charge: "Desarrollador de videojuegos educativos",
     company: "Ciclo Superior",
     summ: "Desarrollo de videojuegos educativos para cursos de Servicio Canarios Público de Empleo, gamificando curso de inglés.",
@@ -136,7 +136,7 @@ const EXPERIENCE: Job[] = [
   },
   {
     icon: StudentIcon({ width: 35, height: 35 }),
-    date: "feb/2518 - ago/2518",
+    date: "02/2018 - 09/2518",
     charge: "Desarrollo de videojuegos",
     company: "Certificación - 600h",
     summ: "Desarrollo de videojuegos 2D y 3D con Unity.",
