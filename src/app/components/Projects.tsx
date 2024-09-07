@@ -25,14 +25,14 @@ const PROJECTS: Project[] = [
     summ: "Proyecto que simula la generación de datos de sensores de aire y agua, para ser almacenados en mongo y de series temporales en cratedb.",
     icons: [NodeIcon({ width: 50, height: 50 }), DockerIcon({ width: 50, height: 50 }), PostgresIcon({ width: 50, height: 50 }), MongoIcon({ width: 50, height: 50 }),GitIcon({ width: 50, height: 50 }),GithubIcon({ width: 50, height: 50 })],
     url: "https://github.com/oasrcode/iot-Simulator",
-     image:"/github wallpaper-min.jpeg"
+     image:"/github-wallpaper-min.jpeg"
   },
   {
     name: "Portfolio",
     summ: "Proyecto de mi portfolio personal.",
     icons: [NextJSIcon({ width: 50, height: 50 }),ReactIcon({ width: 50, height: 50 }), TypeScriptIcon({ width: 50, height: 50 }), TailwindIcon({ width: 50, height: 50 }), GitIcon({ width: 50, height: 50 }),GithubIcon({ width: 50, height: 50 })],
     url: "https://github.com/oasrcode/oasrcode-web",
-     image:"/github wallpaper-min.jpeg"
+     image:"/github-wallpaper-min.jpeg"
   }
 ];
 

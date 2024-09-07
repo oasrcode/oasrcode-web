@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["https://aythamisantana.pages.dev", "www.aythamisantana.pages.dev", "aythamisantana.pages.dev", "oasrcode.workers.dev"],
+    domains: ["https://aythamisantana.pages.dev"],
   },
 };
 export default nextConfig;
