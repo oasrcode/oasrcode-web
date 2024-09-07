@@ -18,21 +18,21 @@ const PROJECTS: Project[] = [
     summ: "Este proyecto es una página web construida con Next.js que muestra un catálogo de películas de la api TheMovieDB . Permite a los usuarios explorar diferentes películas, ver detalles y buscar títulos específicos.",
     icons: [NextJSIcon({ width: 50, height: 50 }), JavaScriptIcon({ width: 50, height: 50 }), ReactIcon({ width: 50, height: 50 }), TailwindIcon({ width: 50, height: 50 }),GitIcon({ width: 50, height: 50 }),GithubIcon({ width: 50, height: 50 })],
     url: "https://github.com/oasrcode/Filmster",
-    image:"/project_images/filmin_frontpage-min.png"
+    image:"static/project_images/filmin_frontpage-min.png"
   },
   {
     name: "iot-Simulator",
     summ: "Proyecto que simula la generación de datos de sensores de aire y agua, para ser almacenados en mongo y de series temporales en cratedb.",
     icons: [NodeIcon({ width: 50, height: 50 }), DockerIcon({ width: 50, height: 50 }), PostgresIcon({ width: 50, height: 50 }), MongoIcon({ width: 50, height: 50 }),GitIcon({ width: 50, height: 50 }),GithubIcon({ width: 50, height: 50 })],
     url: "https://github.com/oasrcode/iot-Simulator",
-     image:"/project_images/github wallpaper-min.jpeg"
+     image:"static/project_images/github wallpaper-min.jpeg"
   },
   {
     name: "Portfolio",
     summ: "Proyecto de mi portfolio personal.",
     icons: [NextJSIcon({ width: 50, height: 50 }),ReactIcon({ width: 50, height: 50 }), TypeScriptIcon({ width: 50, height: 50 }), TailwindIcon({ width: 50, height: 50 }), GitIcon({ width: 50, height: 50 }),GithubIcon({ width: 50, height: 50 })],
     url: "https://github.com/oasrcode/oasrcode-web",
-     image:"/project_images/github wallpaper-min.jpeg"
+     image:"static/project_images/github wallpaper-min.jpeg"
   }
 ];
 
