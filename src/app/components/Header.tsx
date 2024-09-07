@@ -24,7 +24,7 @@ export default function Header() {
     <header className="sticky z-50 flex items-center top-0 w-full h-24 bg-slate-950">
       <div className="flex flex-row items-center justify-between mx-auto w-full lg:w-3/5 backdrop:blur-lg text-white">
         <Link href="/" className="text-white text-xl lg:text-3xl ml-10 lg:ml-0 ">
-          <span className="text-yellow-500">{openTag}</span>OASRCode<span className="text-yellow-500">{closeTag}</span>
+          <span className="text-yellow-500">{openTag}</span>Aythami Santana<span className="text-yellow-500">{closeTag}</span>
         </Link>
 
         <ul className="hidden lg:flex flex-row items-center gap-20 mr-10">

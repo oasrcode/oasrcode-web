@@ -11,8 +11,33 @@ const roboto_mono = Roboto_Mono({
 });
 export const runtime = "edge";
 export const metadata: Metadata = {
-  title: "Aythami Santana",
-  description: "Desarrollador de sofware",
+  metadataBase: new URL('https://aythamisantana.pages.dev'),
+  title: "Aythami Santana - Desarrollador de software",
+  description: "Portafolio de Aythami Santana, desarrollador de software Full Stack",
+  keywords: ["portafolio", "desarrollador", "software", "desarrollador de software", "programador", "programdor de software", "Full Stack"],
+  authors: [
+    { name: "Aythami Santana", url: "https://aythamisantana.pages.dev" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/oasrjob/" },
+  ],
+  openGraph: {
+    title: "Aythami Santana - Desarrollador de software",
+    description: "Portafolio de Aythami Santana, desarrollador de software Full Stack",
+    url: "https://aythamisantana.pages.dev",
+    siteName: "aythamisantana.page.dev",
+    images: [
+      {
+        url: "/siteimage.PNG",
+        width: 1200,
+        height: 630,
+        alt: "Imagen del portafolio de Aythami Santana",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +50,7 @@ export default function RootLayout({
       <body className={roboto_mono.className}>
         <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
