@@ -10,11 +10,31 @@ html {
 }
 
 body {
-  background-color: goldenrod;
+  background-color: rgb(20, 29, 56);
   overscroll-behavior: none;
 }
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(90deg, #ff9900, #0099ff, #ff00bf,#00ffc8);
+  background-size: 300% 300%;
+  animation: gradientAnimation 6s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

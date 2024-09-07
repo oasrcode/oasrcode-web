@@ -16,10 +16,10 @@ export default function HeaderSection({ children, id, title }: { children: React
       id={id}
       className="relative flex flex-col w-full min-h-[100dvh] pt-0 lg:pt-40 mb-20  lg:items-center justify-start lg:justify-start text-black "
     >
-      <p className="relative lg:absolute lg:left-0 text-2xl lg:text-4xl font-bold ">
-        <span className="text-2xl lg:text-4xl">{OPENTAG}</span>
+      <p className="relative lg:absolute lg:left-0 text-2xl lg:text-4xl font-bold text-neutral-50">
+        <span className="text-2xl lg:text-4xl text-yellow-500">{OPENTAG}</span>
         {title}
-        <span className=" text-2xl lg:text-4xl">{CLOSETAG}</span>
+        <span className=" text-2xl lg:text-4xl text-yellow-500">{CLOSETAG}</span>
       </p>
 
       {children}

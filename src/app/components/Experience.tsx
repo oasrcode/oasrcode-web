@@ -17,14 +17,14 @@ import WorkIcon from "./icons/WorkIcon";
 
 export default function Experience() {
   return (
-    <div className="relative flex flex-col w-full min-h-[100dvh] pt-0 lg:pt-40 mb-25  lg:items-center justify-start lg:justify-start">
+    <div className="relative flex flex-col w-full min-h-[100dvh] pt-0 lg:pt-40 mb-25  lg:items-center justify-start lg:justify-start text-neutral-50">
       <div className="relative flex flex-col gap-10 ml-2 lg:ml-0  border-l-2 border-black  mt-10 lg:mt-25 ">
         {EXPERIENCE.map((job, index) => (
           <div key={index} className="ml-10 flex flex-row gap-5 max-w-[600px]">
             <div className="flex items-center justify-center border-[1px] border-black bg-white rounded-full w-12 h-12 absolute -left-6">{job.icon}</div>
             <div>
               <p className="text-xs lg:text-sm opacity-70">{job.date}</p>
-              <p className="lg:text-2xl font-bold mt-4">{job.charge}</p>
+              <p className="lg:text-2xl font-bold mt-4 text-yellow-500">{job.charge}</p>
               <p className="text-sm lg:text-lg">{job.company}</p>
               <p className="opacity-90 text-sm">{job.summ}</p>
               {job.hasProjects == true ? (
