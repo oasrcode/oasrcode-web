@@ -86,7 +86,7 @@ export default function Hero() {
       className="h-[100dvh] w-full flex flex-row items-center justify-center relative z-0"
     >
       <div className="flex flex-col items-center justify-center gap-5 mt-5 lg:mt-0">
-        <img src="/foto_perfil.jfif" className="rounded-full w-32 lg:w-52 shadow-lg shadow-gray-900" alt="Foto de perfil de Aythami Santana, desarrollador de software"/>
+        <img src="/foto_perfil.png" className="rounded-full w-32 lg:w-52 shadow-lg shadow-gray-900" alt="Foto de perfil de Aythami Santana, desarrollador de software"/>
         <p className="text-3xl lg:text-5xl font-bold font-sans text-black">Aythami Santana</p>
         <p className="text-xl lg:text-3xl font-sans font-semibold text-black opacity-80">Fullstack developer</p>
         <p className="w-11/12 lg:w-2/5 opacity-80">
