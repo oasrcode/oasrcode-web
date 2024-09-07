@@ -11,8 +11,8 @@ export interface Project {
 export interface Job {
   icon: any;
   date: string;
-  charge: string;
-  company: string;
+  title: string;
+  subtitle: string;
   summ: string;
   hasProjects: boolean;
   Projects?: Project[];
