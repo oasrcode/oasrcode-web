@@ -138,7 +138,7 @@ const EXPERIENCE: Job[] = [
     icon: StudentIcon({ width: 35, height: 35 }),
     date: "02/2018 - 09/2018",
     title: "Desarrollo de videojuegos",
-    subtitle: "DYMCanarias . Certificación - 600h",
+    subtitle: "Certificación - 600h",
     summ: "Desarrollo de videojuegos 2D y 3D con Unity.",
     hasProjects: false,
   },
