@@ -7,11 +7,12 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 export default function Header() {
-  const openTag = "<";
-  const closeTag = "/>";
+  const openTag = "{";
+  const closeTag = "}";
 
   const tabs = [
     { label: "Inicio", href: "#home" },
+    { label: "Sobre mi", href: "#aboutme" },
     { label: "Experiencia", href: "#experience" },
     { label: "Proyectos", href: "#projects" },
   ];
@@ -22,12 +23,13 @@ export default function Header() {
 
   return (
     <header className="sticky z-50 flex items-center top-0 w-full h-24 bg-slate-950">
-      <div className="flex flex-row items-center justify-between mx-auto w-full lg:w-3/5 backdrop:blur-lg text-white">
+      <div className="flex flex-row items-center justify-between mx-auto w-full xl:w-3/5 backdrop:blur-lg text-white">
         <Link href="/" className="text-neutral-300 font-bold font-mono text-xl lg:text-3xl ml-10 lg:ml-0 drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)] " aria-label="enlace a la página principal">
-          <span className="text-yellow-500">{openTag}</span>Aythami Santana<span className="text-yellow-500">{closeTag}</span>
+          {/* <span className="text-yellow-500 font-serif">{openTag}</span>Aythami Santana<span className="text-yellow-500">{closeTag}</span> */}
+          <img src="/icon_no_bg.png" width={80} height={80}/>
         </Link>
 
-        <ul className="hidden lg:flex flex-row items-center gap-20 mr-10">
+        <ul className="hidden xl:flex flex-row items-center gap-20 mr-10">
           {!pathname.includes("blog") ? (
             <>
               {" "}
@@ -54,7 +56,7 @@ export default function Header() {
           )}
         </ul>
         <button
-          className="block lg:hidden mr-10"
+          className="block xl:hidden mr-10"
           onClick={() => {
             setShow(!show);
           }}

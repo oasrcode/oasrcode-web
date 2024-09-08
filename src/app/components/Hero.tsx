@@ -2,7 +2,7 @@ import AngularIcon from "./icons/AngularIcon";
 import ArrowDown from "./icons/ArrowDown";
 import AzureDevOpsIcon from "./icons/AzureDevOpsIcon";
 import DockerIcon from "./icons/DockerIcon";
-import GithubIcon from "./icons/Github";
+import GithubIcon from "./icons/GithubIcon";
 import GitIcon from "./icons/GitIcon";
 import GrafanaIcon from "./icons/GrafanaIcon";
 import LinkedinIcon from "./icons/Linkedin";
@@ -83,15 +83,12 @@ export default function Hero() {
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 1 }}
       id="home"
-      className="h-[100dvh] w-full flex flex-row items-start mt-0 md:mt-20 md:h-auto lg:h-[100dvh] lg:mt-0 lg:items-center justify-center relative z-0"
+      className="w-full h-auto flex flex-row items-start mt-0 md:mt-20 md:h-auto lg:h-[100dvh] lg:mt-0 lg:items-center justify-center relative z-0"
     >
       <div className="flex flex-col items-center justify-center gap-5 mt-5 lg:mt-0">
         <img src="/foto_perfil.png" className="rounded-full w-32 lg:w-52 shadow-lg shadow-gray-900" alt="Foto de perfil de Aythami Santana, desarrollador de software" />
         <p className="text-4xl lg:text-5xl font-bold font-sans animated-gradient drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">Aythami Santana</p>
-        <p className="text-xl lg:text-3xl font-mono  text-yellow-500 font-bold">Fullstack developer</p>
-        <p className="w-11/12 lg:w-2/5 font-mono text-slate-50 drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)] opacity-80 tracking-wide">
-          Soluciono problemas, ayudo al equipo a alcanzar objetivos, fomento un buen clima de trabajo y me mantengo en constante aprendizaje para adaptarme a las nuevas tendencias.
-        </p>
+        <p className="text-xl lg:text-3xl font-mono  text-yellow-500 font-bold">Desarrollador de software</p>
         <li className="list-none flex flex-row items-center gap-10 lg:mt-10">
           <a className="hover:scale-125 ease-in-out duration-200" href="https://www.linkedin.com/in/oasrjob/" target="_blank" aria-label="Enlace a Linkedin">
             <LinkedinIcon width={40} height={40} />
@@ -103,11 +100,14 @@ export default function Hero() {
             Contáctame 🤙
           </a>
         </li>
-      </div>
-      <div className="absolute bottom-24 animate-bounce">
+        <div className="hidden  md:block animate-bounce">
         <ArrowDown width={50} height={50} />
+        </div>
       </div>
-      <div className="absolute top-20 lg:top-48 -z-20 max-w-[100%] opacity-20 lg:opacity-60">
+      <div className="absolute lg:bottom-24 animate-bounce">
+       
+      </div>
+      <div className="absolute top-20 lg:top-48 -z-20 max-w-[100%] opacity-20 lg:opacity-30">
         <InfiniteCarousel icons={frontendIcons} direction={"right"} />
         <InfiniteCarousel icons={backendIcons} direction={"left"} />
         <InfiniteCarousel icons={ToolsIcons} direction={"right"} />

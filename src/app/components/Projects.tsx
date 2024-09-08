@@ -1,6 +1,6 @@
 import { Project } from "../interface/IProject";
 import DockerIcon from "./icons/DockerIcon";
-import GithubIcon from "./icons/Github";
+import GithubIcon from "./icons/GithubIcon";
 import GitIcon from "./icons/GitIcon";
 import JavaScriptIcon from "./icons/JavaScriptIcon";
 import MongoIcon from "./icons/MongoIcon";
@@ -32,13 +32,13 @@ const PROJECTS: Project[] = [
     summ: "Proyecto de mi portfolio personal.",
     icons: [NextJSIcon({ width: 50, height: 50 }),ReactIcon({ width: 50, height: 50 }), TypeScriptIcon({ width: 50, height: 50 }), TailwindIcon({ width: 50, height: 50 }), GitIcon({ width: 50, height: 50 }),GithubIcon({ width: 50, height: 50 })],
     url: "https://github.com/oasrcode/oasrcode-web",
-     image:"/github-wallpaper-min.jpeg"
+     image:"/siteImage.PNG"
   }
 ];
 
 export default function Projects() {
   return (
-    <div className="relative flex flex-col lg:flex-row lg:flex-wrap gap-7 w-full min-h-[100dvh] pt-0 lg:pt-40 mb-50 items-center justify-center lg:items-start">
+    <div className="relative flex flex-col lg:flex-row lg:flex-wrap gap-7 w-full h-auto pt-0 lg:pt-40 mb-50 items-center justify-center lg:items-start">
       {PROJECTS.map((e, index) => (
         <ProjectCard key={index} data={e}></ProjectCard>
       ))}

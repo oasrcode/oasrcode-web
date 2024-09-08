@@ -63,7 +63,7 @@ const PROJECTS: Project[] = [
   },
   {
     name: "Plataforma iot",
-    summ: "Desarrollo de plataforma web que muestra datos de sensores y gráficas de sus series temporales. Además, muestra imágenes de cámaras de seguridad con bounding boxes.",
+    summ: "Desarrollo de plataforma web que muestra datos de sensores y gráficas de sus series temporales. Además, muestra imágenes de cámaras de seguridad con detecciones, bounding boxes.",
     icons: [
       AngularIcon({ width: 25, height: 25 }),
       NodeIcon({ width: 25, height: 25 }),
@@ -80,7 +80,7 @@ const PROJECTS: Project[] = [
   },
   {
     name: "Drago Administrativo",
-    summ: "Mantenimiento y desarrollos de Drago Adm, programa de escritorio para la gestión de centros de salud en canarias.",
+    summ: "Mantenimiento y desarrollos de Drago Adm, programa de escritorio para la gestión de centros de salud en canarias SCS.",
     icons: [
       NetIcon({ width: 25, height: 25 }),
       AzureDevOpsIcon({ width: 25, height: 25 }),

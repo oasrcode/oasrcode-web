@@ -9,3 +9,6 @@ export const MotionCarousel= motion.div;
 export const MotionSkills= motion.div;
 export const MotionSkillIcon= motion.div;
 export const MotionSideNav= motion.div;
+export const MotionButtonSkillsSelector= motion.button;
+export const MotionSpanSkillsSelectorHover= motion.span;
+export const MotionSpanSkillsPill= motion.div;
