@@ -1,4 +1,4 @@
-import { IconProps } from "@/app/interface/IconProps";
+import { IconProps } from "@/app/interface/IIconProps";
 
 export default function NetIcon({width,height}:IconProps){
     return(<svg width={width} height={height} viewBox="0 0 456 456" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,5 +1,4 @@
-import { IconProps } from "@/app/interface/IconProps";
-
+import { IconProps } from "@/app/interface/IIconProps";
 export default function MongoIcon({ width, height }: IconProps) {
   return (
     <svg width={width} height={height} viewBox="0 0 1024 1024" >

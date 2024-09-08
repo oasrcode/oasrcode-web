@@ -1,5 +1,4 @@
-import { IconProps } from "@/app/interface/IconProps";
-
+import { IconProps } from "@/app/interface/IIconProps";
 export default function NodeIcon({ width, height }: IconProps) {
   return (
     <svg width={width} height={height} viewBox="-16.5 0 289 289" version="1.1"  preserveAspectRatio="xMidYMid">

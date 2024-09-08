@@ -1,8 +1,5 @@
-interface props{
-    width:number,
-    height:number
-}
-export default function ArrowDown({width,height}:props ){
+import { IconProps } from "@/app/interface/IIconProps";
+export default function ArrowDown({width,height}:IconProps ){
   return (
     <svg width={width} height={height} viewBox="0 0 24 24" fill="none">
       <path

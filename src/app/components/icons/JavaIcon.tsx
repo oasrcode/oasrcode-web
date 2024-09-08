@@ -1,5 +1,4 @@
-import { IconProps } from "@/app/interface/IconProps";
-
+import { IconProps } from "@/app/interface/IIconProps";
 export default function JavaIcon({ width, height }: IconProps) {
   return (
     <svg width={width} height={height} viewBox="0 0 192.756 192.756" >

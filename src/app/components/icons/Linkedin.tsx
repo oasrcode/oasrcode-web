@@ -1,5 +1,4 @@
-import { IconProps } from "@/app/interface/IconProps";
-
+import { IconProps } from "@/app/interface/IIconProps";
 export default function LinkedinIcon({width,height}:IconProps){
   return(
     <svg fill="#0e76a8" width={width}height={height}viewBox="0 0 32 32" >

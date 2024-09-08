@@ -1,4 +1,4 @@
-import { IconProps } from "@/app/interface/IconProps";
+import { IconProps } from "@/app/interface/IIconProps";
 
 export default function WorkIcon({width,height}: IconProps) {
   return (

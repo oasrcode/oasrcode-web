@@ -1,5 +1,4 @@
-import { IconProps } from "@/app/interface/IconProps";
-
+import { IconProps } from "@/app/interface/IIconProps";
 export default function HTML5Icon({ width, height }: IconProps) {
   return (
     <svg width={width} height={height} viewBox="-52.5 0 361 361" preserveAspectRatio="xMidYMid">
