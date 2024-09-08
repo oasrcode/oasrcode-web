@@ -32,7 +32,7 @@ const PROJECTS: Project[] = [
     summ: "Proyecto de mi portfolio personal.",
     icons: [NextJSIcon({ width: 50, height: 50 }),ReactIcon({ width: 50, height: 50 }), TypeScriptIcon({ width: 50, height: 50 }), TailwindIcon({ width: 50, height: 50 }), GitIcon({ width: 50, height: 50 }),GithubIcon({ width: 50, height: 50 })],
     url: "https://github.com/oasrcode/oasrcode-web",
-     image:"/siteImage.png"
+     image:"/github-wallpaper-min.jpeg"
   }
 ];
 
