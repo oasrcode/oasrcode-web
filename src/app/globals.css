@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: rgb(20, 29, 56);
+  background-color: #192549;
   overscroll-behavior: none;
 }
 @media (prefers-reduced-motion: reduce) {
