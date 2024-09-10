@@ -105,7 +105,7 @@ const EXPERIENCE: Job[] = [
   {
     icon: StudentIcon({ width: 35, height: 35 }),
     date: "09/2020 - 03/2023",
-    title: "Desarrollo de aplicaciones multimedia.",
+    title: "Desarrollo de aplicaciones multiplataforma.",
     subtitle: "Ciclo Superior",
     summ: "A distancia - IES El Rincón",
     hasProjects: false,
