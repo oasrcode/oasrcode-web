@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Portafolio Web - Aythami Santana - [aythamisantana.pages.dev](https://aythamisantana.pages.dev/ "enlace a mi potfolio")
 
-First, run the development server:
+Este es el repositorio de mi portafolio personal, donde muestro mis proyectos y habilidades como desarrollador Full Stack. La aplicación está construida con [Next.js](https://nextjs.org/), [React](https://reactjs.org/), y [Tailwind CSS](https://tailwindcss.com/), y está completamente optimizada para ser responsiva en todo tipo de dispositivos.
+
+## Características
+
+- 🌐 **Desarrollo Full Stack:** Incluye proyectos de frontend y backend.
+- 🎨 **Interfaz moderna y minimalista:** Estilo limpio con diseño responsive.
+- 🚀 **Performance:** Optimizaciones para un rendimiento rápido y una carga eficiente.
+- 🎥 **Animaciones:** Usando [Framer Motion](https://www.framer.com/motion/) para animaciones suaves.
+- 📱 **Responsivo:** Adaptado para verse bien en dispositivos móviles, tablets y escritorios.
+- 🔧 **Fácil de mantener y escalar:** Usando Tailwind CSS para un diseño rápido y eficiente.
+
+## Tecnologías Utilizadas
+
+- **Next.js**: Framework React para producción y aplicaciones server-side rendering (SSR).
+- **React**: Biblioteca de JavaScript para la creación de interfaces de usuario.
+- **Tailwind CSS**: Framework de CSS utilitario para estilos personalizados.
+- **Framer Motion**: Para animaciones fluidas y dinámicas.
+
+## Instalación y Ejecución
+
+Sigue estos pasos para clonar y ejecutar el proyecto localmente.
+
+### Prerrequisitos
+
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [Git](https://git-scm.com/)
+
+### Clonar el Repositorio
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/oasrcode/oasrcode-web
+cd oasrcode-web
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
